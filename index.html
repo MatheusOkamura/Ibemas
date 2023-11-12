@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GG Séries</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <div id="menu-icon">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Animes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="mobile-menu">
+        <a href="#">Página Inicial</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuIcon.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+        });
+    </script>
+    <div class="card">
+        <img src="https://4.bp.blogspot.com/-35D6v4UpITg/WrrS9cw_yQI/AAAAAAABQ4Y/iSpYlbUT3nEDxS4rlRmXUzI7nf01MddNgCKgBGAs/s1600/IMG_9119.JPG" alt="Imagem do Card">
+        <div class="card-title">Título do Card</div>
+        <div class="card-content">
+            <i class="fas fa-icon "></i>
+            <p>Texto do card abaixo do ícone.</p>
+        </div>
+    </div>
+
+</body>
+</html>
