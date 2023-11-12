@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #292b2e;
+}
+header {
+    background-color: #0d0f11;
+    color: #fff;
+    padding: 10px 0;
+}
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 15px;
+}
+nav {
+    display: flex;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    margin: 0 15px;
+}
+nav a {
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+/* Estilos da imagem no topo */
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+/* Estilos do título do card */
+.card-title {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* Estilos do ícone e texto */
+.card-content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.card-content i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #007bff; /* Cor do ícone (exemplo) */
+}
+.card-content p {
+    margin: 0;
+    font-size: 1rem;
+}
+#menu-icon {
+    display: none;
+    cursor: pointer;
+}
+#mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #181818;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    z-index: 1;
+}
+#mobile-menu.active {
+    display: flex;
+}
+#mobile-menu a {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+}
